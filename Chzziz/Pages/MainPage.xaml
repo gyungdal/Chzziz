@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:Chzziz.Views"
+             xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+             xmlns:maui="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
+             x:Class="Chzziz.Pages.MainPage" >
+    
+    <maui:NavigationDrawer >
+        <maui:NavigationDrawerItem IconData="{Static icon:Material.Category}" Text="Streamer 1">
+            <views:AddStreamerView />
+        </maui:NavigationDrawerItem>
+
+        <maui:NavigationDrawer.FooterItems>
+            <maui:NavigationDrawerItem IconData="{Static icon:Material.Add}" Text="스트리머 추가" >
+                <Label
+                    FontSize="26"
+                    HorizontalOptions="Center"
+                    Text="Item 2"
+                    VerticalOptions="Center" />
+                <!-- <views:AddStreamerView /> -->
+            </maui:NavigationDrawerItem>
+            <maui:NavigationDrawerItem IconData="{Static icon:Material.Settings}" Text="Settings">
+                <Label
+                    FontSize="26"
+                    HorizontalOptions="Center"
+                    Text="Item 3"
+                    VerticalOptions="Center" />
+                <!-- <views:SettingView /> -->
+            </maui:NavigationDrawerItem>
+        </maui:NavigationDrawer.FooterItems>
+    </maui:NavigationDrawer>
+</ContentPage>

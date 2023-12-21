@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:icon="clr-namespace:IconPacks.IconKind;assembly=IconPacks.Material"
+             xmlns:maui="clr-namespace:Material.Components.Maui;assembly=Material.Components.Maui"
+             x:Class="Chzziz.Views.AddStreamerView">
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout Spacing="20">
+            <Entry ReturnType="Done" Placeholder="Hello" />
+            <maui:WrapLayout Padding="20" HorizontalSpacing="20">
+                <maui:ExtendedFAB
+                    IconData="{Static icon:Material.Add}"
+                    Style="{DynamicResource SecondaryExtendedFABStyle}"
+                    Text="Extended" />
+                <maui:ExtendedFAB
+                    IconData="{Static icon:Material.Add}"
+                    Style="{DynamicResource SurfaceExtendedFABStyle}"
+                    Text="Extended" />
+                <maui:ExtendedFAB
+                    IconData="{Static icon:Material.Add}"
+                    Style="{DynamicResource TertiaryExtendedFABStyle}"
+                    Text="Extended" />
+            </maui:WrapLayout>
+
+            <maui:WrapLayout Padding="20" HorizontalSpacing="20">
+                <maui:FAB IconData="{Static icon:Material.Add}" Style="{DynamicResource SecondaryFABStyle}" />
+                <maui:FAB IconData="{Static icon:Material.Add}" Style="{DynamicResource SurfaceFABStyle}" />
+                <maui:FAB IconData="{Static icon:Material.Add}" Style="{DynamicResource TertiaryFABStyle}" />
+            </maui:WrapLayout>
+
+            <maui:WrapLayout Padding="20" HorizontalSpacing="20">
+                <maui:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource FilledIconButtonStyle}" />
+                <maui:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource FilledTonalIconButtonStyle}" />
+                <maui:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource OutlinedIconButtonStyle}" />
+                <maui:IconButton IconData="{Static icon:Material.Star}" Style="{DynamicResource StandardIconButtonStyle}" />
+            </maui:WrapLayout>
+
+            <maui:WrapLayout Padding="20" HorizontalSpacing="20">
+                <maui:ProgressIndicator Style="{DynamicResource CircularProgressIndicatorStyle}" />
+                <maui:ProgressIndicator Style="{DynamicResource LinearProgressIndicatorStyle}" />
+            </maui:WrapLayout>
+            
+            <maui:WrapLayout Padding="20" HorizontalSpacing="20">
+                <maui:Switch />
+                <maui:Switch IsSelected="True" />
+                <maui:Switch IsSelected="True" Style="{DynamicResource MarkSwitchStyle}" />
+            </maui:WrapLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentView>
